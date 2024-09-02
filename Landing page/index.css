@@ -1,0 +1,339 @@
+
+body {
+    margin: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    color: white;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.navbar {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: beige;
+    text-decoration: none;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.main{
+    height: 100vh;
+    background: url('https://elysianwatches.com/cdn/shop/files/elysian-gouden-heren-horloge-zwart-plaat-camel-vintage-leder-horlogeband-ELYWM00125-SECOND.jpg?crop=center&height=1080&v=1697900408&width=1014') no-repeat center center/cover ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    opacity: 0.9;
+}
+
+.main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.main-content {
+    position: relative;
+    z-index: 1;
+}
+
+.main h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.main p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.main-buttons .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background: beige;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.main-buttons .btn:hover {
+    background: rgb(241, 200, 200);
+}
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 20px;
+    background: white;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.about-watch {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-watch img {
+    height:50%;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.collections {
+    padding: 50px 20px;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.collections-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.collection-item {
+    margin: 20px;
+    flex: 1 1 300px;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.collection-item img {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.collection-item p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.collection-item .btn {
+    padding: 10px 20px;
+    background: beige;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.collection-item .btn:hover {
+    background:  rgb(241, 200, 200);
+}
+
+.customization {
+    padding: 50px 20px;
+    background: white;
+    text-align: center;
+}
+
+.customizer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.watch-display img {
+    max-width: 80%;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.options {
+    margin-left: 30px;
+}
+
+.option-btn {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.option-btn:hover {
+    background: #555;
+}
+
+.rs {
+    padding: 50px 20px;
+    background: #f5f5f5;
+    text-align: center;
+}
+.r {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.r-item {
+    margin: 20px;
+    flex: 1 1 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+}
+
+.r-item span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    
+}
+
+
+.footer {
+    background: #333;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.quick-links {
+    margin-bottom: 20px;
+}
+
+.quick-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+.newsletter {
+    margin-top: 20px;
+}
+
+.newsletter p {
+    margin-bottom: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter .btn {
+    padding: 10px 20px;
+    background: beige;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter .btn:hover {
+    background:  rgb(241, 200, 200);
+}
+
+#reviews h2{
+    color: black;
+    padding: 20px;
+}
